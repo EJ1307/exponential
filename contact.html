@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get In Touch – Exponential Services</title>
+  <meta name="description" content="Contact Exponential Services to discuss your event. We're ready to plan, coordinate, and execute your next unforgettable experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #162032 100%);
+      padding: 160px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 20% 60%, rgba(232,82,26,0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .page-hero-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange-light);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .page-hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo Files/logo_header.png" alt="Exponential Services" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" style="background: var(--orange-dark) !important;">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="section-container" style="position:relative;">
+      <div class="page-hero-label">Let's Connect</div>
+      <h1>Ready to Transform Your <span style="color: var(--orange-light);">Vision?</span></h1>
+      <p>Partner with Exponential Services and let us craft an unforgettable experience for you.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="cta-section" id="contact" style="padding: 100px 0; background: var(--off-white);">
+    <div class="section-container">
+      <div class="cta-card-centered" style="background: var(--white); border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.1); border-top: 4px solid var(--orange);">
+        <form id="contact-form" class="minimal-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.'); this.reset();">
+          <div class="form-row-two">
+            <div class="form-group-minimal">
+              <input type="text" id="form-name" required placeholder=" " />
+              <label for="form-name">Your Name</label>
+            </div>
+            <div class="form-group-minimal">
+              <input type="email" id="form-email" required placeholder=" " />
+              <label for="form-email">Email Address</label>
+            </div>
+          </div>
+
+          <div class="form-group-minimal">
+            <input type="tel" id="form-phone" required placeholder=" " />
+            <label for="form-phone">Phone Number</label>
+          </div>
+
+          <div class="form-group-minimal">
+            <textarea id="form-message" rows="4" required placeholder=" "></textarea>
+            <label for="form-message">How can we help?</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn" style="width: 100%; justify-content: center; margin-top: 10px;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Logo Files/logo_footer.png" alt="Exponential Services" class="footer-logo" />
+          <p class="footer-tagline">Delivering Excellence. Creating Experiences.</p>
+          <p class="footer-desc">Comprehensive event management &amp; strategic support — from planning to execution, we make every event exceptional.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="why-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#service-pre">Pre-Event Activities</a></li>
+            <li><a href="services.html#service-day">Event Day Activities</a></li>
+            <li><a href="services.html#service-post">Post-Event Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Exponential Services. All rights reserved.</span>
+        <span class="footer-credit">Beyond Limits</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

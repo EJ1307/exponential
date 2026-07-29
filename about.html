@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Exponential Services</title>
+  <meta name="description" content="Learn about Exponential Services – a team dedicated to delivering seamless, world-class event experiences through strategic planning and flawless execution." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #162032 100%);
+      padding: 160px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(232,82,26,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-hero-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange-light);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .page-hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo Files/logo_header.png" alt="Exponential Services" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link" style="color: var(--orange);">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="section-container" style="position:relative;">
+      <div class="page-hero-label">Our Story</div>
+      <h1>Who We <span style="color: var(--orange-light);">Are</span></h1>
+      <p>A passionate team dedicated to delivering seamless, world-class event experiences — every time.</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about" style="padding: 100px 0;">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-images about-images-single">
+          <img src="img/DIP04829.jpg" alt="Exponential Services event setup" loading="lazy" />
+        </div>
+        <div class="about-content about-content-refined">
+          <div class="about-mini-label">DELIVERING EXCELLENCE. CREATING EXPERIENCES.</div>
+          <h2 class="about-refined-title">Who We Are</h2>
+          <div class="about-title-underline"></div>
+          <p class="about-text">At Exponential Services, we specialize in delivering seamless event experiences through strategic planning, efficient coordination, and flawless execution. Whether it's a corporate conference, stakeholder meeting, or large-scale event, our expert team ensures every detail is managed with precision.</p>
+          <p class="about-text">We believe every event tells a story — and we're here to make yours unforgettable. From the first planning session to the final follow-up, we are with you every step of the way.</p>
+          <p class="about-text">Our dedicated managers collaborate closely with your stakeholders to execute logistics, coordinate protocols, and design solutions tailored to your brand's unique presence.</p>
+          <a href="services.html" class="btn btn-primary" style="margin-top: 12px;">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Logo Files/logo_footer.png" alt="Exponential Services" class="footer-logo" />
+          <p class="footer-tagline">Delivering Excellence. Creating Experiences.</p>
+          <p class="footer-desc">Comprehensive event management &amp; strategic support — from planning to execution, we make every event exceptional.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="why-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#service-pre">Pre-Event Activities</a></li>
+            <li><a href="services.html#service-day">Event Day Activities</a></li>
+            <li><a href="services.html#service-post">Post-Event Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Exponential Services. All rights reserved.</span>
+        <span class="footer-credit">Beyond Limits</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

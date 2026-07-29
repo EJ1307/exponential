@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Exponential Services</title>
+  <meta name="description" content="Explore events crafted by Exponential Services — a visual portfolio of world-class corporate conferences, summits, and large-scale events." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #162032 100%);
+      padding: 160px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, rgba(232,82,26,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-hero-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange-light);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .page-hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+      position: relative;
+    }
+    .gallery-full-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      .gallery-full-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .gallery-full-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo Files/logo_header.png" alt="Exponential Services" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link" style="color: var(--orange);">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="section-container" style="position:relative;">
+      <div class="page-hero-label">Gallery</div>
+      <h1>Events We've <span style="color: var(--orange-light);">Crafted</span></h1>
+      <p>A glimpse into the world-class events we bring to life — every detail, every moment.</p>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <section style="padding: 100px 0; background: var(--white);">
+    <div class="section-container">
+      <div class="gallery-full-grid">
+        <div class="gallery-item">
+          <img src="img/DIP04920.jpg" alt="Corporate event ballroom setup" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04872.jpg" alt="Event presentation" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04873.jpg" alt="Event delegates" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04925.jpg" alt="Large-scale event" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP05087.jpg" alt="VIP coordination" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04863.jpg" alt="Event production panel" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04820.jpg" alt="Event setup" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04828.jpg" alt="Corporate event" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04832.jpg" alt="Delegates" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/DIP04880.jpg" alt="Event coordination" loading="lazy" />
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 60px;">
+        <a href="https://fotovisionindia.fotoowl.ai/gallery/305337?pass_key=1369" target="_blank" rel="noopener" class="btn btn-primary btn-large">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Logo Files/logo_footer.png" alt="Exponential Services" class="footer-logo" />
+          <p class="footer-tagline">Delivering Excellence. Creating Experiences.</p>
+          <p class="footer-desc">Comprehensive event management &amp; strategic support — from planning to execution, we make every event exceptional.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="why-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#service-pre">Pre-Event Activities</a></li>
+            <li><a href="services.html#service-day">Event Day Activities</a></li>
+            <li><a href="services.html#service-post">Post-Event Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Exponential Services. All rights reserved.</span>
+        <span class="footer-credit">Beyond Limits</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
