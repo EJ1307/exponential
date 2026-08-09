@@ -33,36 +33,38 @@ const dots = document.querySelectorAll('.dot');
 let currentSlide = 0;
 let slideInterval;
 
-function goToSlide(index) {
-  slides[currentSlide].classList.remove('active');
-  dots[currentSlide].classList.remove('active');
-  currentSlide = (index + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-  dots[currentSlide].classList.add('active');
-}
+if (slides.length > 0) {
+  function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
 
-function nextSlide() {
-  goToSlide(currentSlide + 1);
-}
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
 
-function startSlideshow() {
-  slideInterval = setInterval(nextSlide, 5000);
-}
+  function startSlideshow() {
+    slideInterval = setInterval(nextSlide, 5000);
+  }
 
-function stopSlideshow() {
-  clearInterval(slideInterval);
-}
+  function stopSlideshow() {
+    clearInterval(slideInterval);
+  }
 
-dots.forEach(dot => {
-  dot.addEventListener('click', () => {
-    const idx = parseInt(dot.getAttribute('data-slide'), 10);
-    stopSlideshow();
-    goToSlide(idx);
-    startSlideshow();
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.getAttribute('data-slide'), 10);
+      stopSlideshow();
+      goToSlide(idx);
+      startSlideshow();
+    });
   });
-});
 
-startSlideshow();
+  startSlideshow();
+}
 
 // ─── Stats counter animation ─────────────────────────
 const statNumbers = document.querySelectorAll('.stat-number');
@@ -176,20 +178,70 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// ─── Testimonials Slider (Autoplay) ───────────────────
-const testiCards = document.querySelectorAll('.testi-card');
-let currentTesti = 0;
+// ─── Project Gallery Lightbox ─────────────────────────
+const lightboxModal = document.getElementById('lightboxModal');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
 
-if (testiCards.length > 0) {
-  function showTesti(index) {
-    testiCards[currentTesti].classList.remove('active');
-    currentTesti = (index + testiCards.length) % testiCards.length;
-    testiCards[currentTesti].classList.add('active');
+if (lightboxModal) {
+  let currentImgs = [];
+  let activeIndex = 0;
+
+  function showImage(index) {
+    if (currentImgs.length === 0) return;
+    activeIndex = (index + currentImgs.length) % currentImgs.length;
+    const img = currentImgs[activeIndex];
+    lightboxImg.src = img.getAttribute('src');
+    lightboxImg.alt = img.getAttribute('alt') || 'Gallery photo';
+    if (lightboxCaption) {
+      lightboxCaption.textContent =
+        (img.getAttribute('alt') || '') + `  (${activeIndex + 1}/${currentImgs.length})`;
+    }
   }
 
-  // Auto-rotate every 5 seconds
-  setInterval(() => {
-    showTesti(currentTesti + 1);
-  }, 5000);
+  function openProject(card) {
+    currentImgs = Array.from(card.querySelectorAll('.project-images img'));
+    if (currentImgs.length === 0) return;
+    showImage(0);
+    lightboxModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightboxModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.project-card').forEach((card) => {
+    card.addEventListener('click', () => openProject(card));
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  lightboxModal.addEventListener('click', (e) => {
+    if (e.target === lightboxModal) closeLightbox();
+  });
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showImage(activeIndex - 1);
+    });
+  }
+  if (lightboxNext) {
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showImage(activeIndex + 1);
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightboxModal.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showImage(activeIndex - 1);
+    if (e.key === 'ArrowRight') showImage(activeIndex + 1);
+  });
 }
+
 

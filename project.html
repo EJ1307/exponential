@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Gallery – Exponential Services</title>
+  <meta name="description" content="Full photo gallery of an event crafted by Exponential Services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #162032 100%);
+      padding: 160px 0 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, rgba(232,82,26,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-hero-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--orange-light);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    .page-hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+      position: relative;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 32px;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--orange);
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .photo-grid figure {
+      margin: 0;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: #eef1f5;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .photo-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo Files/logo_header.png" alt="Exponential Services" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link" style="color: var(--orange);">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Get In Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="section-container" style="position:relative;">
+      <div class="page-hero-label">Project Gallery</div>
+      <h1 id="projectTitle">Event Gallery</h1>
+      <p id="projectDesc">Every detail, every moment — captured.</p>
+    </div>
+  </div>
+
+  <!-- PHOTO GRID -->
+  <section style="padding: 60px 0 100px; background: var(--white);">
+    <div class="section-container">
+      <a href="gallery.html" class="back-link">&#8592; Back to Gallery</a>
+      <div class="photo-grid" id="photoGrid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Logo Files/logo_footer.png" alt="Exponential Services" class="footer-logo" />
+          <p class="footer-tagline">Delivering Excellence. Creating Experiences.</p>
+          <p class="footer-desc">Comprehensive event management &amp; strategic support — from planning to execution, we make every event exceptional.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="why-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#service-pre">Pre-Event Activities</a></li>
+            <li><a href="services.html#service-day">Event Day Activities</a></li>
+            <li><a href="services.html#service-post">Post-Event Activities</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Exponential Services. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var PROJECTS = {
+      elecrama: {
+        title: 'ELECRAMA 2025',
+        desc: 'A glimpse into ELECRAMA 2025 — conference sessions, cultural showcase, and exhibition booths.',
+        images: [
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.48 PM.jpeg', 'Bharat – The Vishwa Mitra session'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.06.05 PM.jpeg', 'ELECRAMA 2025 plenary stage & audience'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.06.06 PM.jpeg', 'ELECRAMA 2025 leadership panel'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM (1).jpeg', 'ELECRAMA 2025 audience ovation'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM.jpeg', 'ELECRAMA 2025 cultural performance'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.39 PM.jpeg', 'PARMA & BTH exhibition booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM (1).jpeg', 'Windsor Airon exhibition stand'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM.jpeg', 'Elechem exhibition booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.18.42 PM.jpeg', 'Exhibition showcase & display units'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.19.04 PM.jpeg', 'Modern expo booth construction'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.17 PM.jpeg', 'Custom exhibition pavilion'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.29 PM.jpeg', 'Brand activation & expo stall'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.49 PM.jpeg', 'Trade fair display booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.01 PM.jpeg', 'Exhibition floor management & setup'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM (1).jpeg', 'Interactive brand display pavilion'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM.jpeg', 'Custom event exhibition architecture'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.23.14 PM.jpeg', 'Exhibition lighting & graphics setup'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.25.49 PM.jpeg', 'Expo stall experience center']
+        ]
+      },
+      summit: {
+        title: 'IPHEX 2026',
+        desc: 'Highlights from IPHEX 2026 — delegates, keynote sessions, and networking.',
+        images: [
+          ['img/DIP04920.webp', 'Corporate event ballroom setup'],
+          ['img/DIP04872.webp', 'Keynote presentation stage'],
+          ['img/DIP04873.webp', 'Executive delegates & attendees'],
+          ['img/DIP04925.webp', 'Large-scale summit production'],
+          ['img/DIP05087.webp', 'VIP coordination & hospitality'],
+          ['img/DIP04863.webp', 'Event production panel'],
+          ['img/DIP04820.webp', 'Stage lighting & sound setup'],
+          ['img/DIP04828.webp', 'Conference audience area'],
+          ['img/DIP04832.webp', 'Delegate networking session'],
+          ['img/DIP04880.webp', 'On-site event management'],
+          ['img/DIP04806.webp', 'IPHEX 2026'],
+          ['img/DIP04808.webp', 'IPHEX 2026'],
+          ['img/DIP04813.webp', 'IPHEX 2026'],
+          ['img/DIP04822.webp', 'IPHEX 2026'],
+          ['img/DIP04829.webp', 'IPHEX 2026'],
+          ['img/DIP04831.webp', 'IPHEX 2026'],
+          ['img/DIP04833.webp', 'IPHEX 2026'],
+          ['img/DIP04839.webp', 'IPHEX 2026'],
+          ['img/DIP04842.webp', 'IPHEX 2026'],
+          ['img/DIP04844.webp', 'IPHEX 2026'],
+          ['img/DIP04848.webp', 'IPHEX 2026'],
+          ['img/DIP04866.webp', 'IPHEX 2026'],
+          ['img/DIP04867.webp', 'IPHEX 2026'],
+          ['img/DIP04869.webp', 'IPHEX 2026'],
+          ['img/DIP04874.webp', 'IPHEX 2026'],
+          ['img/DIP04876.webp', 'IPHEX 2026'],
+          ['img/DIP04877.webp', 'IPHEX 2026'],
+          ['img/DIP04878.webp', 'IPHEX 2026'],
+          ['img/DIP04881.webp', 'IPHEX 2026'],
+          ['img/DIP04882.webp', 'IPHEX 2026']
+        ]
+      }
+    };
+
+    (function () {
+      var key = new URLSearchParams(location.search).get('project');
+      var p = PROJECTS[key] || PROJECTS.elecrama;
+      document.getElementById('projectTitle').textContent = p.title;
+      document.getElementById('projectDesc').textContent = p.desc;
+      document.title = p.title + ' – Exponential Services';
+      var grid = document.getElementById('photoGrid');
+      grid.innerHTML = p.images.map(function (im) {
+        var src = im[0].replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+        var alt = im[1].replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+        return '<figure><img src="' + src + '" alt="' + alt + '" loading="lazy" /></figure>';
+      }).join('');
+    })();
+  </script>
+  <script src="script.js?v=2"></script>
+</body>
+
+</html>
