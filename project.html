@@ -125,6 +125,15 @@
     <div class="section-container">
       <a href="gallery.html" class="back-link">&#8592; Back to Gallery</a>
       <div class="photo-grid" id="photoGrid"></div>
+      <div id="moreWrap" style="text-align:center; margin-top:48px; display:none;">
+        <a id="moreBtn" target="_blank" rel="noopener"
+           style="display:inline-block; background:var(--gradient-main); color:var(--white);
+                  font-family:var(--font-display); font-weight:600; font-size:0.95rem;
+                  padding:11px 26px; border-radius:4px; text-decoration:none;
+                  transition:transform .2s ease, box-shadow .2s ease;"
+           onmouseover="this.style.transform='translateY(-1px)';this.style.boxShadow='0 6px 18px rgba(232,82,26,0.25)';"
+           onmouseout="this.style.transform='';this.style.boxShadow='';">See More</a>
+      </div>
     </div>
   </section>
 
@@ -168,30 +177,37 @@
         title: 'ELECRAMA 2025',
         desc: 'A glimpse into ELECRAMA 2025 — conference sessions, cultural showcase, and exhibition booths.',
         images: [
-          ['expo/WhatsApp Image 2026-08-07 at 4.09.48 PM.jpeg', 'Bharat – The Vishwa Mitra session'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.06.05 PM.jpeg', 'ELECRAMA 2025 plenary stage & audience'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.06.06 PM.jpeg', 'ELECRAMA 2025 leadership panel'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM (1).jpeg', 'ELECRAMA 2025 audience ovation'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM.jpeg', 'ELECRAMA 2025 cultural performance'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.38.39 PM.jpeg', 'PARMA & BTH exhibition booth'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM (1).jpeg', 'Windsor Airon exhibition stand'],
-          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM.jpeg', 'Elechem exhibition booth'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.18.42 PM.jpeg', 'Exhibition showcase & display units'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.19.04 PM.jpeg', 'Modern expo booth construction'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.20.17 PM.jpeg', 'Custom exhibition pavilion'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.20.29 PM.jpeg', 'Brand activation & expo stall'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.20.49 PM.jpeg', 'Trade fair display booth'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.21.01 PM.jpeg', 'Exhibition floor management & setup'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM (1).jpeg', 'Interactive brand display pavilion'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM.jpeg', 'Custom event exhibition architecture'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.23.14 PM.jpeg', 'Exhibition lighting & graphics setup'],
-          ['expo/WhatsApp Image 2026-08-07 at 5.25.49 PM.jpeg', 'Expo stall experience center']
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.48 PM.webp', 'Bharat – The Vishwa Mitra session'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.06.05 PM.webp', 'ELECRAMA 2025 plenary stage & audience'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.06.06 PM.webp', 'ELECRAMA 2025 leadership panel'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM (1).webp', 'ELECRAMA 2025 audience ovation'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.09.18 PM.webp', 'ELECRAMA 2025 cultural performance'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.39 PM.webp', 'PARMA & BTH exhibition booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM (1).webp', 'Windsor Airon exhibition stand'],
+          ['expo/WhatsApp Image 2026-08-07 at 4.38.40 PM.webp', 'Elechem exhibition booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.18.42 PM.webp', 'Exhibition showcase & display units'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.19.04 PM.webp', 'Modern expo booth construction'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.17 PM.webp', 'Custom exhibition pavilion'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.29 PM.webp', 'Brand activation & expo stall'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.20.49 PM.webp', 'Trade fair display booth'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.01 PM.webp', 'Exhibition floor management & setup'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM (1).webp', 'Interactive brand display pavilion'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.21.30 PM.webp', 'Custom event exhibition architecture'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.23.14 PM.webp', 'Exhibition lighting & graphics setup'],
+          ['expo/WhatsApp Image 2026-08-07 at 5.25.49 PM.webp', 'Expo stall experience center']
         ]
       },
       summit: {
         title: 'IPHEX 2026',
         desc: 'Highlights from IPHEX 2026 — delegates, keynote sessions, and networking.',
+        more: 'https://fotovisionindia.fotoowl.ai/gallery/305337?pass_key=1369',
         images: [
+          ['img/DIP05064.webp', 'IPHEX 2026 – guest felicitation with bouquet'],
+          ['img/DIP05141.webp', 'IPHEX 2026 – dignitary welcome'],
+          ['img/DIP05164.webp', 'IPHEX 2026 – lamp lighting ceremony'],
+          ['img/DIP05123.webp', 'IPHEX 2026 – Global Ambassadors Meet address'],
+          ['img/DIP05097.webp', 'IPHEX 2026 – memento presentation'],
+          ['img/DIP05079.webp', 'IPHEX 2026 – Innovating the Future of Pharma'],
           ['img/DIP04920.webp', 'Corporate event ballroom setup'],
           ['img/DIP04872.webp', 'Keynote presentation stage'],
           ['img/DIP04873.webp', 'Executive delegates & attendees'],
@@ -213,15 +229,24 @@
           ['img/DIP04842.webp', 'IPHEX 2026'],
           ['img/DIP04844.webp', 'IPHEX 2026'],
           ['img/DIP04848.webp', 'IPHEX 2026'],
-          ['img/DIP04866.webp', 'IPHEX 2026'],
-          ['img/DIP04867.webp', 'IPHEX 2026'],
           ['img/DIP04869.webp', 'IPHEX 2026'],
           ['img/DIP04874.webp', 'IPHEX 2026'],
           ['img/DIP04876.webp', 'IPHEX 2026'],
           ['img/DIP04877.webp', 'IPHEX 2026'],
           ['img/DIP04878.webp', 'IPHEX 2026'],
-          ['img/DIP04881.webp', 'IPHEX 2026'],
-          ['img/DIP04882.webp', 'IPHEX 2026']
+          ['img/DIP05058.webp', 'IPHEX 2026'],
+          ['img/DIP05100.webp', 'IPHEX 2026'],
+          ['img/DIP05101.webp', 'IPHEX 2026'],
+          ['img/DIP05116.webp', 'IPHEX 2026'],
+          ['img/DIP05152.webp', 'IPHEX 2026'],
+          ['img/DIP05160.webp', 'IPHEX 2026'],
+          ['img/DIP05173.webp', 'IPHEX 2026'],
+          ['img/DIP05186.webp', 'IPHEX 2026'],
+          ['img/DIP05197.webp', 'IPHEX 2026'],
+          ['img/DIP05217.webp', 'IPHEX 2026'],
+          ['img/DIP05237.webp', 'IPHEX 2026'],
+          ['img/DIP05261.webp', 'IPHEX 2026'],
+          ['img/DIP05287.webp', 'IPHEX 2026']
         ]
       }
     };
@@ -238,6 +263,11 @@
         var alt = im[1].replace(/&/g, '&amp;').replace(/"/g, '&quot;');
         return '<figure><img src="' + src + '" alt="' + alt + '" loading="lazy" /></figure>';
       }).join('');
+      if (p.more) {
+        var btn = document.getElementById('moreBtn');
+        btn.href = p.more;
+        document.getElementById('moreWrap').style.display = 'block';
+      }
     })();
   </script>
   <script src="script.js?v=2"></script>
