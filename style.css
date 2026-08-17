@@ -1012,6 +1012,60 @@ ul {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.contact-info-heading {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+  text-transform: uppercase;
+  color: #94A0B0;
+}
+
+.contact-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 40px;
+  margin-top: 16px;
+}
+
+.contact-info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #4A5668;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contact-info-item:hover { color: var(--orange); }
+.contact-info-icon { color: var(--orange); font-size: 1.05rem; }
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--orange-light);
+}
+
 .footer-credit {
   font-family: var(--font-display);
   font-weight: 400;
