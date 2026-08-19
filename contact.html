@@ -106,46 +106,39 @@
   <!-- CONTACT SECTION -->
   <section class="cta-section" id="contact" style="padding: 100px 0; background: var(--off-white);">
     <div class="section-container">
-      <div class="cta-card-centered" style="background: var(--white); border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.1); border-top: 4px solid var(--orange);">
-        <form id="contact-form" class="minimal-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.'); this.reset();">
-          <div class="form-row-two">
-            <div class="form-group-minimal">
-              <input type="text" id="form-name" required placeholder=" " />
-              <label for="form-name">Your Name</label>
-            </div>
-            <div class="form-group-minimal">
-              <input type="email" id="form-email" required placeholder=" " />
-              <label for="form-email">Email Address</label>
-            </div>
-          </div>
-
-          <div class="form-group-minimal">
-            <input type="tel" id="form-phone" required placeholder=" " />
-            <label for="form-phone">Phone Number</label>
-          </div>
-
-          <div class="form-group-minimal">
-            <textarea id="form-message" rows="4" required placeholder=" "></textarea>
-            <label for="form-message">How can we help?</label>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit-btn" style="margin-top: 10px; align-self: center; width: auto;">Send Message</button>
-        </form>
-      </div>
-
-      <p class="contact-info-heading">Or contact us directly</p>
-
-      <div class="contact-info-row">
-        <a class="contact-info-item" href="mailto:info@exponentialservices.in">
-          <span class="contact-info-icon">&#9993;</span> info@exponentialservices.in
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:info@exponentialservices.in">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 6.5l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-card-label">Email Us</span>
+          <span class="contact-card-value">info@exponentialservices.in</span>
         </a>
-        <a class="contact-info-item" href="mailto:exponential.service@gmail.com">
-          <span class="contact-info-icon">&#9993;</span> exponential.service@gmail.com
+        <a class="contact-card" href="mailto:exponential.service@gmail.com">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M3 6.5l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-card-label">Alternate Email</span>
+          <span class="contact-card-value">exponential.service@gmail.com</span>
         </a>
-        <a class="contact-info-item" href="tel:+917982072623">
-          <span class="contact-info-icon">&#9742;</span> Manoj &mdash; +91 79820 72623
+        <a class="contact-card" href="tel:+917982072623">
+          <span class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 006 6l1.5-2 4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 5.7 2 2 0 016.5 3.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="contact-card-label">Call Manoj</span>
+          <span class="contact-card-value">+91 79820 72623</span>
         </a>
       </div>
+
+      <p class="contact-note">Write to us with your event brief &mdash; we typically respond within one business day.</p>
     </div>
   </section>
 
