@@ -1,8 +1,8 @@
 # Exponential Services
 
-> Exponential Services is an event management and strategic support company that delivers seamless corporate event experiences — from planning to execution. We handle corporate conferences, stakeholder meetings, exhibitions, and large-scale events with end-to-end coordination and precision.
+> Exponential Services is an event management and strategic support company that delivers seamless corporate event experiences, from planning to execution. We handle corporate conferences, stakeholder meetings, exhibitions, and large-scale events with end-to-end coordination and precision.
 
-Tagline: Delivering Excellence. Creating Experiences. — Beyond Limits.
+Tagline: Delivering Excellence. Creating Experiences. Beyond Limits.
 Website: https://exponentialservices.in
 
 ## What we do
@@ -28,12 +28,22 @@ Exponential Services provides comprehensive event management across three phases
 - [Services](https://exponentialservices.in/services.html): Full breakdown of Pre-Event, Event Day, and Post-Event services.
 - [Why Choose Us](https://exponentialservices.in/why-us.html): The reasons corporates trust Exponential Services.
 - [Gallery](https://exponentialservices.in/gallery.html): Visual portfolio of events crafted by Exponential Services.
-- [Get In Touch](https://exponentialservices.in/contact.html): Contact form to plan your next event.
+- [Get In Touch](https://exponentialservices.in/contact.html): Email and phone contact details to plan your next event.
+
+- [Blog](https://exponentialservices.in/blog.html): Practical guides on event management.
+
+## Blog articles
+
+- [How to Plan a Corporate Conference in India](https://exponentialservices.in/corporate-conference-planning-guide.html): Step by step guide covering objective, budget, venue, agenda, vendors, rehearsal, and post event reporting.
+- [Event Management Checklist](https://exponentialservices.in/event-management-checklist.html): Pre-event, event day, and post-event checklist for corporate events.
+- [Delegate Management and VIP Protocol](https://exponentialservices.in/delegate-management-vip-protocol.html): Registration, delegate database, VIP arrival planning, and seating precedence.
+- [How Much Does Corporate Event Management Cost in India](https://exponentialservices.in/corporate-event-management-cost-india.html): Fee models, cost heads, budget drivers, and where overruns happen.
+- [Exhibition Stall Design](https://exponentialservices.in/exhibition-stall-design-guide.html): Trade show stall layout, lighting, messaging, staffing, and lead capture.
 
 ## Featured events
 
-- **IPHEX 2026** — Global Ambassadors Meet / Curtain Raiser Ceremony, Bharat Mandapam, New Delhi (Pharmexcil, Ministry of Commerce & Industry, Government of India).
-- **ELECRAMA 2025** — 16th edition, India Expo Mart, Greater Noida (IEEMA), including conference sessions, cultural showcase, and exhibition booths.
+- **IPHEX 2026**: Global Ambassadors Meet / Curtain Raiser Ceremony, Bharat Mandapam, New Delhi (Pharmexcil, Ministry of Commerce & Industry, Government of India).
+- **ELECRAMA 2025**: 16th edition, India Expo Mart, Greater Noida (IEEMA), including conference sessions, cultural showcase, and exhibition booths.
 
 ## Contact
 
